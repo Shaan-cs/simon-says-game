@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simon Says Game</h1>
+    <div class="level-info">Level: <span id="level-text">0</span></div>
+    
+    <div class="game-container">
+        <div class="btn green" id="green"></div>
+        <div class="btn red" id="red"></div>
+        <div class="btn yellow" id="yellow"></div>
+        <div class="btn blue" id="blue"></div>
+        
+        <div class="center">
+            <div class="score-display" id="score">--</div>
+            <div class="game-over" id="game-over"></div>
+        </div>
+    </div>
+    
+    <div class="controls">
+        <button id="start-btn">Start Game</button>
+        <div class="strict-mode">
+            <input type="checkbox" id="strict-mode">
+            <label for="strict-mode">Strict Mode</label>
+        </div>
+    </div>
+
+    <audio id="green-sound" src="./sound/button sound.mp3" preload="auto"></audio>
+    <audio id="red-sound" src="./sound/button sound.mp3" preload="auto"></audio>
+    <audio id="yellow-sound" src="./sound/button sound.mp3" preload="auto"></audio>
+    <audio id="blue-sound" src="./sound/button sound.mp3" preload="auto"></audio>
+    <audio id="wrong-sound" src="./sound/wrong sound.mp3" preload="auto"></audio>
+
+    <script src="index.js"></script>
+</body>
+</html>
